@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style type="text/css">
+
+.detailThumbnailBoxes {
+    left: 0;
+    top: 16.666vh;
+    width: 100vw;
+    height: 78.24vh;
+}
+.detailThumbnailBoxes .thumbnailBox {
+    position: absolute;
+    width: 59.895vw;
+    height: 59.722vh;
+    transform-style: preserve-3d;
+    perspective: 200px;
+}
+.detailThumbnailBoxes .thumbnail {
+    position: absolute;
+    width: 59.895vw;
+    height: 59.722vh;
+    background-color: #000000;
+}
+.detailThumbnailBoxes .thumbnail.refrection {
+    opacity: 0.7;
+    transform-origin: 50% 50% 0;
+    transform: translateY(59.722vh) rotateX(180deg);
+}
+.deg90 .thumbnail {
+    transform-origin: 0% 50% 0;
+    transform: rotateY(90deg);
+}
+.deg90 .refrection {
+    transform-origin: 0% 50% 0;
+    transform: translateY(59.722vh) rotateY(90deg) rotateX(180deg);
+}
+.deg80 .thumbnail {
+    transform-origin: 0% 50% 0;
+    transform: rotateY(80deg);
+}
+.deg80 .thumbnail.refrection {
+    transform-origin: 0% 50% 0;
+    transform: translateY(59.722vh) rotateY(80deg) rotateX(180deg);
+}
+.deg70 .thumbnail {
+    transform-origin: 0% 50% 0;
+    transform: rotateY(70deg);
+}
+.deg70 .thumbnail.refrection {
+    transform-origin: 0% 50% 0;
+    transform: translateY(59.722vh) rotateY(70deg) rotateX(180deg);
+}
+.deg60 .thumbnail {
+    transform-origin: 0% 50% 0;
+    transform: rotateY(60deg);
+}
+.deg60 .thumbnail.refrection {
+    transform-origin: 0% 50% 0;
+    transform: translateY(59.722vh) rotateY(60deg) rotateX(180deg);
+}
+.deg50 .thumbnail {
+    transform-origin: 0% 100% 0;
+    transform: rotateY(50deg);
+}
+.deg50 .thumbnail.refrection {
+    transform-origin: 0% 50% 0;
+    transform: translateY(59.722vh) rotateY(50deg) rotateX(180deg);
+}
+.deg40 .thumbnail {
+    transform-origin: 0% 50% 0;
+    transform: rotateY(40deg);
+}
+.deg40 .thumbnail.refrection {
+    transform-origin: 0% 50% 0;
+    transform: translateY(59.722vh) rotateY(40deg) rotateX(180deg);
+}
+.deg30 .thumbnail {
+    transform-origin: 0% 50% 0;
+    transform: rotateY(30deg);
+}
+.deg30 .thumbnail.refrection {
+    transform-origin: 0% 50% 0;
+    transform:  translateY(59.722vh) rotateY(30deg) rotateX(180deg);
+}
+.deg20 .thumbnail {
+    transform-origin: 0% 50% 0;
+    transform: rotateY(20deg);
+}
+.deg20 .thumbnail.refrection {
+    transform-origin: 0% 50% 0;
+    transform: translateY(59.722vh) rotateY(20deg) rotateX(180deg);
+}
+.deg10 .thumbnail {
+    transform-origin: 0% 50% 0;
+    transform: rotateY(10deg);
+}
+.deg10 .thumbnail.refrection {
+    transform-origin: 0% 50% 0;
+    transform: translateY(59.722vh) rotateY(10deg) rotateX(180deg);
+}
+.deg00 .thumbnail {
+    transform-origin: 0% 50% 0;
+    transform: rotateY(0deg);
+}
+.deg00 .thumbnail.refrection {
+    transform-origin: 0% 50% 0;
+    transform: translateY(59.722vh) rotateY(0deg) rotateX(180deg);
+}
+.deg-00 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(0deg);
+}
+.deg-00 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(0deg) rotateX(180deg);
+}
+.deg-10 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(-10deg);
+}
+.deg-10 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(-10deg) rotateX(180deg);
+}
+.deg-20 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(-20deg);
+}
+.deg-20 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(-20deg) rotateX(180deg);
+}
+.deg-30 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(-30deg);
+}
+.deg-30 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(-30deg) rotateX(180deg);
+}
+.deg-40 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(-40deg);
+}
+.deg-40 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(-40deg) rotateX(180deg);
+}
+.deg-50 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(-50deg);
+}
+.deg-50 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(-50deg) rotateX(180deg);
+}
+.deg-60 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(-60deg);
+}
+.deg-60 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(-60deg) rotateX(180deg);
+}
+.deg-70 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(-70deg);
+}
+.deg-70 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(-70deg) rotateX(180deg);
+}
+.deg-80 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(-80deg);
+}
+.deg-80 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(-80deg) rotateX(180deg);
+}
+.deg-90 .thumbnail {
+    transform-origin: 100% 50% 0;
+    transform: rotateY(-90deg);
+}
+.deg-90 .thumbnail.refrection {
+    transform-origin: 100% 50% 0;
+    transform: translateY(59.722vh) rotateY(-90deg) rotateX(180deg);
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="detailThumbnailBoxes" style="display: block;">
+        <div data-position="-6" class="thumbnailBox deg80" style="z-index: 1; transform: translateX(-9.9475vw) scale(0.7, 0.7);">
+            <span>position: -6</span>
+            <img src="-6.png" class="thumbnail">
+            <img src="-6.png" class="thumbnail refrection">
+        </div>
+        <div data-position="6" class="thumbnailBox deg-80" style="z-index: 1; transform: translateX(50.0525vw) scale(0.7, 0.7);">
+            <span>position: 6</span>
+            <img src="+6.png" class="thumbnail">
+            <img src="+6.png" class="thumbnail refrection">
+        </div>
+        <div data-position="-5" class="thumbnailBox deg80" style="z-index: 1; transform: translateX(-9.9475vw) scale(0.7, 0.7);">
+            <span>position: -5</span>
+            <img src="-5.png" class="thumbnail">
+            <img src="-5.png" class="thumbnail refrection">
+        </div>
+        <div data-position="5" class="thumbnailBox deg-80" style="z-index: 1; transform: translateX(50.0525vw) scale(0.7, 0.7);">
+            <span>position: 5</span>
+            <img src="+5.png" class="thumbnail">
+            <img src="+5.png" class="thumbnail refrection">
+        </div>
+        <div data-position="-4" class="thumbnailBox deg80" style="z-index: 1; transform: translateX(-9.9475vw) scale(0.7, 0.7);">
+            <span>position: -4</span>
+            <img src="-4.png" class="thumbnail">
+            <img src="-4.png" class="thumbnail refrection">
+        </div>
+        <div data-position="4" class="thumbnailBox deg-80" style="z-index: 1; transform: translateX(50.0525vw) scale(0.7, 0.7);">
+            <span>position: 4</span>
+            <img src="+4.png" class="thumbnail">
+            <img src="+4.png" class="thumbnail refrection">
+        </div>
+        <div data-position="-3" class="thumbnailBox deg80" style="z-index: 2; transform: translateX(-9.9475vw) scale(0.7, 0.7);">
+            <span>position: -3</span>
+            <img src="-3.png" class="thumbnail">
+            <img src="-3.png" class="thumbnail refrection">
+        </div>
+        <div data-position="3" class="thumbnailBox deg-80" style="z-index: 2; transform: translateX(50.0525vw) scale(0.7, 0.7);">
+            <span>position: 3</span>
+            <img src="+3.png" class="thumbnail">
+            <img src="+3.png" class="thumbnail refrection">
+        </div>
+        <div data-position="-2" class="thumbnailBox deg50" style="z-index: 3; transform: translateX(-4.9475vw) scale(0.7, 0.7);">
+            <span>position: -2</span>
+            <img src="-2.png" class="thumbnail">
+            <img src="-2.png" class="thumbnail refrection">
+        </div>
+        <div data-position="2" class="thumbnailBox deg-50" style="z-index: 3; transform: translateX(45.0525vw) scale(0.7, 0.7);">
+            <span>position: 2</span>
+            <img src="+2.png" class="thumbnail">
+            <img src="+2.png" class="thumbnail refrection">
+        </div>
+        <div data-position="-1" class="thumbnailBox deg10" style="z-index: 4; transform: translateX(2.5525vw) scale(0.7, 0.7);">
+            <span>position: -1</span>
+            <img src="-1.png" class="thumbnail">
+            <img src="-1.png" class="thumbnail refrection">
+        </div>
+        <div data-position="1" class="thumbnailBox deg-10" style="z-index: 4; transform: translateX(37.5525vw) scale(0.7, 0.7);">
+            <span>position: 1</span>
+            <img src="+1.png" class="thumbnail">
+            <img src="+1.png" class="thumbnail refrection">
+        </div>
+        <div data-position="0" class="thumbnailBox deg00" style="z-index: 5; transform: translateX(20.0525vw) scale(1, 1);">
+            <span>position: 0</span>
+            <img src="0.png" class="thumbnail">
+            <img src="0.png" class="thumbnail refrection">
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            var divs = document.querySelectorAll('.thumbnailBox');
+            for (var i = 0; i < divs.length; i++) {
+                var div = divs[i];
+                div.addEventListener('click', function (ev) {
+                    var position = ev.currentTarget.getAttribute('data-position');
+                    alert('position: ' + position);
+                });
+            }
+        });
+
+    </script>
+
+</body>
+</html>
